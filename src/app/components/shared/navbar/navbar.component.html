@@ -1,0 +1,11 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <button ngbNavLink>Inicio</button>
+    <ng-template ngbNavContent> Bienvenidos! </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <button ngbNavLink>Login</button>
+    <ng-template ngbNavContent> <app-login> </app-login> </ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
