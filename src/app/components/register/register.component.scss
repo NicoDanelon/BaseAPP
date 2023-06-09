@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.contenido-login {
+  padding: 5px 50px 5px 50px;
+  align-items: center;
+}
+
+.label-init {
+  align-items: start;
+}
+
+.margen-texto-input {
+  margin-top: -15px;
+}
+
+.login-title {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margen-registrate {
+  margin-top: 25px;
+}
+
+.pointer {
+  cursor: pointer;
+}

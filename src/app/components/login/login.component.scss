@@ -8,6 +8,11 @@
 
 .contenido-login {
   padding: 5px 50px 5px 50px;
+  align-items: center;
+}
+
+.label-init {
+  align-items: start;
 }
 
 .margen-texto-input {
@@ -23,4 +28,8 @@
 
 .margen-registrate {
   margin-top: 25px;
+}
+
+.pointer {
+  cursor: pointer;
 }

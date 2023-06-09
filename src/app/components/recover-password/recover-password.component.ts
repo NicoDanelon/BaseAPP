@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-recover-password',
   standalone: true,
-  imports: [CommonModule],
+  imports: [MatCardModule, MatButtonModule, MatInputModule, RouterLink],
   templateUrl: './recover-password.component.html',
-  styleUrls: ['./recover-password.component.scss']
+  styleUrls: ['./recover-password.component.scss'],
 })
-export class RecoverPasswordComponent {
-
-}
+export class RecoverPasswordComponent {}

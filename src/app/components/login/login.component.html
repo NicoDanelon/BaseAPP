@@ -5,19 +5,13 @@
         <mat-card-header class="login-title">
           <mat-card-title>Login</mat-card-title>
         </mat-card-header>
-        <div class="row">
-          <div class="col"><h3>e-mail:</h3></div>
-        </div>
-        <div class="row margen-texto-input">
+        <div class="row margen-input">
           <div class="col">
             <mat-form-field class="example-full-width">
               <mat-label>e-mail</mat-label>
               <input matInput placeholder="e-mail" type="email" />
             </mat-form-field>
           </div>
-        </div>
-        <div class="row">
-          <div class="col"><h3>contraseña:</h3></div>
         </div>
         <div class="row margen-texto-input">
           <div class="col">
@@ -29,9 +23,16 @@
         </div>
         <mat-card-actions>
           <div class="row">
-            <div class="col"><button mat-button>VOLVER</button></div>
             <div class="col">
-              <button mat-raised-button color="primary" class="float-right">
+              <button mat-button [routerLink]="['/homepage']">VOLVER</button>
+            </div>
+            <div class="col">
+              <button
+                mat-raised-button
+                color="primary"
+                class="float-right"
+                [routerLink]="['/dashboard']"
+              >
                 Logueate!
               </button>
             </div>
@@ -39,7 +40,20 @@
         </mat-card-actions>
         <div class="row margen-registrate">
           <div class="col">
-            <h4>No tenes cuenta? <b>Registrate!</b></h4>
+            <h4>
+              Olvidaste tu contraseña?
+              <b class="pointer" [routerLink]="['/recover-password']"
+                >Recuperala!</b
+              >
+            </h4>
+          </div>
+        </div>
+        <div class="row margen-registrate">
+          <div class="col">
+            <h4>
+              No tenes cuenta?
+              <b class="pointer" [routerLink]="['/register']">Registrate!</b>
+            </h4>
           </div>
         </div>
       </mat-card>
